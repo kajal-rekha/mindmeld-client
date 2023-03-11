@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../components/Button";
+import ErrorMessage from "../components/errorMessage";
 import FormControl from "../components/FormControl";
 import SectionTitle from "../components/SectionTitle";
 import { useSignup } from "../hooks/useSignup";
@@ -51,11 +52,7 @@ const Register = () => {
           setFormFields={setFormFields}
         />
         <Button text={isLoading ? "Registering..." : "Register"} submit />
-        {error && (
-          <p className="bg-rose-50 text-rose-500 border border-red-500 p-5 rounded">
-            {error}
-          </p>
-        )}
+        {error && <ErrorMessage error={error} />}
       </form>
     </div>
   );
