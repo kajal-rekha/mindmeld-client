@@ -1,3 +1,5 @@
+import React from "react";
+
 const SectionTitle = ({ title }) => {
   return (
     <h2 className="section-title text-3xl font-semibold text-violet-500 mb-5">
@@ -6,4 +8,4 @@ const SectionTitle = ({ title }) => {
   );
 };
 
-export default SectionTitle;
+export default React.memo(SectionTitle);

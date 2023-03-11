@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useState } from "react";
 import Button from "../components/Button";
 import FormControl from "../components/FormControl";
@@ -47,4 +49,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default React.memo(Login);
