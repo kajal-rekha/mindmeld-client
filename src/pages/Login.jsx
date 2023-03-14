@@ -22,7 +22,7 @@ const Login = () => {
 
   return (
     <div className="login flex flex-col justify-center mt-20 items-center">
-      <form onSubmit={handleLogin} className="flex flex-col gap-5">
+      <form onSubmit={handleLogin} className="flex flex-col gap-5 w-[25rem]">
         <SectionTitle title={"Login..."} />
 
         <FormControl
